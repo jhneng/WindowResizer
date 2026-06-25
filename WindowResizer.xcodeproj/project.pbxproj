@@ -6,18 +6,7 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		04CE18C82FE802750027CA17 /* WindowResizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE18C72FE802710027CA17 /* WindowResizer.swift */; };
-		04CE18CC2FE802CA0027CA17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE18CB2FE802C70027CA17 /* ContentView.swift */; };
-		04CE18CE2FE802E10027CA17 /* WindowResizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE18CD2FE802DC0027CA17 /* WindowResizerApp.swift */; };
-		04CE18CF2FE805320027CA17 /* Presets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE18CA2FE802970027CA17 /* Presets.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
-		04CE18C72FE802710027CA17 /* WindowResizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowResizer.swift; sourceTree = "<group>"; };
-		04CE18CA2FE802970027CA17 /* Presets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presets.swift; sourceTree = "<group>"; };
-		04CE18CB2FE802C70027CA17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		04CE18CD2FE802DC0027CA17 /* WindowResizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowResizerApp.swift; sourceTree = "<group>"; };
 		04CE18D02FE8064C0027CA17 /* WindowResizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WindowResizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -45,10 +34,6 @@
 			children = (
 				04CE18B92FE802440027CA17 /* WindowResizer */,
 				04CE18B82FE802440027CA17 /* Products */,
-				04CE18C72FE802710027CA17 /* WindowResizer.swift */,
-				04CE18CA2FE802970027CA17 /* Presets.swift */,
-				04CE18CB2FE802C70027CA17 /* ContentView.swift */,
-				04CE18CD2FE802DC0027CA17 /* WindowResizerApp.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,10 +120,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04CE18CE2FE802E10027CA17 /* WindowResizerApp.swift in Sources */,
-				04CE18CC2FE802CA0027CA17 /* ContentView.swift in Sources */,
-				04CE18CF2FE805320027CA17 /* Presets.swift in Sources */,
-				04CE18C82FE802750027CA17 /* WindowResizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
