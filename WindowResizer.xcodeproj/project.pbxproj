@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		04CE18C82FE802750027CA17 /* WindowResizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE18C72FE802710027CA17 /* WindowResizer.swift */; };
+		04CE18CC2FE802CA0027CA17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE18CB2FE802C70027CA17 /* ContentView.swift */; };
+		04CE18CE2FE802E10027CA17 /* WindowResizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE18CD2FE802DC0027CA17 /* WindowResizerApp.swift */; };
+		04CE18CF2FE805320027CA17 /* Presets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE18CA2FE802970027CA17 /* Presets.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		04CE18B72FE802440027CA17 /* WindowResizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WindowResizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CE18C72FE802710027CA17 /* WindowResizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowResizer.swift; sourceTree = "<group>"; };
+		04CE18CA2FE802970027CA17 /* Presets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presets.swift; sourceTree = "<group>"; };
+		04CE18CB2FE802C70027CA17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		04CE18CD2FE802DC0027CA17 /* WindowResizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowResizerApp.swift; sourceTree = "<group>"; };
+		04CE18D02FE8064C0027CA17 /* WindowResizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WindowResizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -34,13 +45,17 @@
 			children = (
 				04CE18B92FE802440027CA17 /* WindowResizer */,
 				04CE18B82FE802440027CA17 /* Products */,
+				04CE18C72FE802710027CA17 /* WindowResizer.swift */,
+				04CE18CA2FE802970027CA17 /* Presets.swift */,
+				04CE18CB2FE802C70027CA17 /* ContentView.swift */,
+				04CE18CD2FE802DC0027CA17 /* WindowResizerApp.swift */,
 			);
 			sourceTree = "<group>";
 		};
 		04CE18B82FE802440027CA17 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				04CE18B72FE802440027CA17 /* WindowResizer.app */,
+				04CE18D02FE8064C0027CA17 /* WindowResizer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,7 +82,7 @@
 			packageProductDependencies = (
 			);
 			productName = WindowResizer;
-			productReference = 04CE18B72FE802440027CA17 /* WindowResizer.app */;
+			productReference = 04CE18D02FE8064C0027CA17 /* WindowResizer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -82,6 +97,7 @@
 				TargetAttributes = {
 					04CE18B62FE802440027CA17 = {
 						CreatedOnToolsVersion = 26.5;
+						LastSwiftMigration = 2650;
 					};
 				};
 			};
@@ -119,6 +135,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CE18CE2FE802E10027CA17 /* WindowResizerApp.swift in Sources */,
+				04CE18CC2FE802CA0027CA17 /* ContentView.swift in Sources */,
+				04CE18CF2FE805320027CA17 /* Presets.swift in Sources */,
+				04CE18C82FE802750027CA17 /* WindowResizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,13 +268,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -268,6 +291,8 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WindowResizer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -278,13 +303,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,6 +326,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WindowResizer-Bridging-Header.h";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 			};
