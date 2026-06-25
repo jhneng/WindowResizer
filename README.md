@@ -25,8 +25,8 @@ Built with SwiftUI and the Accessibility API.
 
 ## Install
 
-This app is **not signed or notarized** (the author doesn't have an Apple
-Developer account). macOS will block it on first launch — that's expected, and
+This app is **not signed or notarized** (I don't have an active Apple
+Developer account). macOS will block it on first launch which is expected, and
 the steps below show how to allow it.
 
 1. Download the latest `WindowResizer.app.zip` from the
