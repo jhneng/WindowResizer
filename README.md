@@ -5,6 +5,10 @@ to preset sizes or screen halves.
 
 Built with SwiftUI and the Accessibility API.
 
+<p align="center">
+  <img src="docs/screenshot.png" alt="Window Resizer menu-bar popover" width="320">
+</p>
+
 ## Features
 
 - Lives in the menu bar — no Dock icon, no app-switcher entry
